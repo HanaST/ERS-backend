@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="col-lg-6" >
+
+    <nb-card>
+      <nb-card-header>Original Resume</nb-card-header>
+      <nb-card-body>
+          <pdf-viewer src="../../../assets/Yenat.pdf"
+          [show-all]="true"
+          [autoresize]="true"
+          [original-size]='true'
+          [fit-to-page]='true'
+          [render-text]='false'
+          ></pdf-viewer>
+      </nb-card-body>
+    </nb-card>
+  </div>
+  <div class="col-lg-6">
+    <nb-card>
+      <nb-card-header>Extracted Result</nb-card-header>
+      <nb-card-body>
+        <label for="name">Name</label><br>
+        <input type="text" nbInput fullWidth shape="rectangle" placeholder="Name">
+        <div class="full-name-inputs">
+          <label for="name">Email</label><br>
+          <input type="text" nbInput fullWidth placeholder="Email">
+          <label for="name">Phone</label><br>
+          <input type="text" nbInput fullWidth placeholder="Phone">
+        </div>
+        <label for="name">Summary</label><br>
+        <input type="text" nbInput fullWidth shape="rectangle" placeholder="Summary">
+        <label for="name">Education</label><br>
+        <input type="text" nbInput fullWidth shape="semi-round" placeholder="Education">
+        <label for="name">Certificates</label><br>
+        <input type="text" nbInput fullWidth shape="round" placeholder="Certificates">
+        <label for="name">Skills</label><br>
+        <input type="text" nbInput fullWidth placeholder="Skills" disabled/>
+        <label for="name">Experience</label><br>
+        <textarea rows="5" nbInput fullWidth shape="round"  placeholder="Text Area"></textarea>
+        <button type="button">Save</button>
+      </nb-card-body>
+    </nb-card>
+  </div>
+</div>
+
+ 
